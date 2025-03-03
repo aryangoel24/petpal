@@ -1,0 +1,19 @@
+# This text file should explain how to deploy your website.
+
+# You should write detailed description on:
+
+# 1. All the packages you need to install
+First clone the repository
+Then cd into P3/backend and setup the virtual env and activate it
+Make sure you have python and pip installed
+Then simply run the following commands
+pip install django Pillow djangorestframework djangorestframework-simplejwt django-cors-headers
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py loaddata final.json
+python3 manage.py runserver
+then in another terminal, cd into P3/frontend/petpal and run the commands
+npm ci
+npm start
+and you can start browsing!!
+# 2. How to configure various servers (e.g., Nginx, Apache, etc)
